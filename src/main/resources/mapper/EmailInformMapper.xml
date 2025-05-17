@@ -5,7 +5,7 @@
 <mapper namespace="xyz.kuailemao.mapper.EmailInformMapper">
 
 
-    <select id="getCommentEmailOne" resultType="xyz.kuailemao.domain.email.CommentEmail">
+    <select id="getCommentEmailOne" resultType="xyz.ctliu.domain.email.CommentEmail">
         <if test="type == 1">
             SELECT
             a.article_title AS title,

@@ -138,7 +138,7 @@ spring:
 #  group-configs:
 #    - group: 'default'
 #      paths-to-match: '/**'
-#      packages-to-scan: xyz.kuailemao
+#      packages-to-scan: xyz.ctliu
 #oauth:
 #  # gitee 登录
 #  gitee:
