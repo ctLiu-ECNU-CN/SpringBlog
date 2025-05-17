@@ -12,10 +12,21 @@ import java.util.List;
  * 创建时间：2024/1/4 14:11
  */
 @Data
+/**
+ * ArticleDTO 是用于封装文章数据的传输对象（Data Transfer Object），
+ * 该类通常用于 Controller 与 Service 或 API 接口之间传输文章相关的数据。
+ * <p>
+ * 包含文章的基础信息，例如标题、内容、分类、标签、状态等。
+ * 并通过 Jakarta Bean Validation 注解对必填字段进行数据校验。
+ * <p>
+ * 注意事项：
+ * - tagId 为标签 ID 列表，需在业务层处理与标签的关联关系。
+ * - 不包含作者、阅读数等字段，若有需要可在扩展类中添加。
+ */
 public class ArticleDTO implements BaseData {
-    // 文章id
+//     文章id
     private Long id;
-    //分类id
+//     分类id
     @NotNull(message = "分类id不能为空")
     private Long categoryId;
     // 标签id
